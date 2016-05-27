@@ -16,8 +16,8 @@
 
 
 //INCLUDE GUARD
-#ifndef ___DECLARITIVE_____H
-#define ___DECLARITIVE_____H
+#ifndef ___DECLARATIVE_____H
+#define ___DECLARATIVE_____H
 
 //Concatenate two preprocessor symbols
 #define CONCATENATE_IMPL(s1, s2) s1##s2
