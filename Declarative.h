@@ -73,7 +73,8 @@ namespace declarative {
 
 //THE FUN HAPPENS HERE
 
-//Use the addition operator defined in namespace "declarative" to create a convenient macro to generate a scope guard protecting a lambda with a global capture.
+//Use the addition operator defined in namespace "declarative" to create a convenient macro 
+//to generate a scope guard protecting a lambda with a global scope capture.
 #define SCOPE_EXIT \
 	auto ANONYMOUS_VARIABLE(SCOPE_EXIT_STATE) \
 	= ::declarative::ScopeGuardOnExit::Exit + [&]()
