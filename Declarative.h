@@ -2,9 +2,14 @@
 //////////////////////////////////////////////////////////////////////////
 /*
 
-	TAKEN FROM ANDREI ALEXANDRESCU'S TALK, "Declarative Control Flow" at CPPCON 2015
-	FULL TALK CAN BE FOUND AT https://www.youtube.com/watch?v=WjTrfoiB0MQ
-	DECLARATIVE CONTROL FLOW
+	FULL CREDITS FOR THIS CODE BELONGS TO ANDREI ALEXANDRESCU
+	IT WAS ADAPTED FROM HIS TALK "Declarative Control Flow" AT CPPCON 2015
+	THE FULL TALK CAN BE FOUND AT https://www.youtube.com/watch?v=WjTrfoiB0MQ
+	WATCH THE TALK IT'S AMAZING. 
+	
+	ANDREI ALEXANDRESCU IS A GOD AMONGST MORTAL MEN
+
+	Written By: Gabriel Alacchi as an adaptation of code found in the above talk.
 
 */
 //////////////////////////////////////////////////////////////////////////
