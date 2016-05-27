@@ -7,11 +7,12 @@ For an example of where this may be useful check the example in Andrei's talk
 USAGE example
 
   void example(const char* file) {
+      
     	FILE* f = fopen(file, "r");
     	char* buffer = new char[2048];
     	
     	//do something ...
-      
+    
     	SCOPE_EXIT { //Will be run regardless of the exit context (even on an exception being thrown, so use this to deallocate resources
     		  cout << "Scope is exiting, deallocating resources..." << endl;
     		  fclose(f); 
