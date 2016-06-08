@@ -19,6 +19,9 @@
 #ifndef ___DECLARATIVE_____H
 #define ___DECLARATIVE_____H
 
+#include <exception>
+#include <utility>
+
 //Concatenate two preprocessor symbols
 #define CONCATENATE_IMPL(s1, s2) s1##s2
 #define CONCATENATE(s1, s2) CONCATENATE_IMPL(s1, s2)
@@ -82,15 +85,15 @@ namespace declarative {
 //to generate a scope guard protecting a lambda with a global scope capture.
 #define SCOPE_EXIT \
 	auto ANONYMOUS_VARIABLE(SCOPE_EXIT_STATE) \
-	= ::declarative::ScopeGuardOnExit::Exit + [&]()
+	= ::declarative::ScopeExitState::Exit + [&]()
 
 #define SCOPE_FAIL \
 	auto ANONYMOUS_VARIABLE(SCOPE_FAIL_STATE) \
-	= ::declarative::ScopeGuardOnExit::Fail + [&]()
+	= ::declarative::ScopeExitState::Fail + [&]()
 
 #define SCOPE_SUCCESS \
 	auto ANONYMOUS_VARIABLE(SCOPE_SUCCESS_STATE) \
-	= ::declarative::ScopeGuardOnExit::Success + [&]()
+	= ::declarative::ScopeExitState::Success + [&]()
 
 
 
